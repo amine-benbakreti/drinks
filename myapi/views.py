@@ -23,7 +23,7 @@ class Drinkcreate(generics.CreateAPIView):
         des=serializer.validated_data.get('description') 
         ra=serializer.validated_data.get('rate') or None
         if ra== None:
-            ra = 'aa'
+            ra = 'amine'
         serializer.save(rate=ra)
 
 
